@@ -1,0 +1,13 @@
+<div class="card-columns">
+  <div class="card" *ngFor="let usuario of this.usuarios">
+    <img class="card-img-top" src={{this.usuario.avatar}} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{this.usuario.first_name}} {{this.usuario.last_name}}</h5>
+      <p class="card-text">This is a longentent. This content is a little bit longer.</p>
+      <p class="card-text">
+        <span class="text-muted">Id:{{usuario.id}}</span>
+      </p>
+    </div>
+  </div>
+
+</div>
